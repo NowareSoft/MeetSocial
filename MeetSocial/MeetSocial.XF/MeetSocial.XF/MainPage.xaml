@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             mc:Ignorable="d"
+             x:Class="MeetSocial.XF.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout>
+        <!-- Menu -->
+        <AbsoluteLayout
+            BackgroundColor="{StaticResource Pink}">
+            <!-- Background -->
+            <border:SfBorder
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="White"
+                BorderWidth="0"
+                CornerRadius="0,0,0,75"
+                HeightRequest="150">
+                <Grid
+                    Padding="30,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Column 1 -->
+                    <StackLayout
+                        Grid.Column="0"
+                        VerticalOptions="Center">
+                        <border:SfBorder
+                            BorderWidth="0"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            WidthRequest="50">
+                            <Image
+                                Aspect="Fill"
+                                Source="foto_1.jpg"/>
+                        </border:SfBorder>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            HorizontalTextAlignment="Center"
+                            Text="YOU"
+                            TextColor="Silver"/>
+                    </StackLayout>
+
+                    <!-- Column 2 -->
+                    <StackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center">
+                        <border:SfBorder
+                            BackgroundColor="Transparent"
+                            BorderColor="{StaticResource Pink}"
+                            BorderWidth="2"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            WidthRequest="50">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="25"
+                                HorizontalOptions="Center"
+                                Source="ic_trending_up.png"
+                                VerticalOptions="Center"
+                                WidthRequest="25"/>
+                        </border:SfBorder>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            HorizontalTextAlignment="Center"
+                            Text="TRENDING"
+                            TextColor="Black"/>
+                    </StackLayout>
+
+                    <!-- Column 3 -->
+                    <StackLayout
+                        Grid.Column="2"
+                        VerticalOptions="Center">
+                        <border:SfBorder
+                            BorderColor="Silver"
+                            BorderWidth="1"
+                            CornerRadius="25"
+                            HeightRequest="50"
+                            HorizontalOptions="Center"
+                            WidthRequest="50">
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="25"
+                                HorizontalOptions="Center"
+                                Source="like.png"
+                                VerticalOptions="Center"
+                                WidthRequest="25"/>
+                        </border:SfBorder>
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            HorizontalTextAlignment="Center"
+                            Text="HEALTH"
+                            TextColor="Silver"/>
+                    </StackLayout>
+                </Grid>
+            </border:SfBorder>
+        </AbsoluteLayout>
+
+        <!-- Background 2 -->
+        <AbsoluteLayout
+            BackgroundColor="{StaticResource Purple}"
+            TranslationY="-7">
+            <border:SfBorder
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="{StaticResource Pink}"
+                BorderWidth="0"
+                CornerRadius="0,0,0,75"
+                HeightRequest="150">
+                <StackLayout
+                    Margin="40,20"
+                    VerticalOptions="CenterAndExpand">
+                    <!-- Hour -->
+                    <Label
+                        FontSize="13"
+                        Text="TODAY 5:30 PM"
+                        TextColor="White"/>
+
+                    <!-- Description -->
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="Yoga and Meditation for Beginners"
+                        TextColor="White"/>
+                    
+                    <!-- People -->
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <border:SfBorder
+                            BorderColor="White"
+                            CornerRadius="13"
+                            HeightRequest="26"
+                            WidthRequest="26">
+                            <Image
+                                Aspect="Fill"
+                                Source="foto_2.jpg"/>
+                        </border:SfBorder>
+                        <Label
+                            FontAttributes="Italic"
+                            Text="Join Marie, John and 10 others"
+                            TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+            </border:SfBorder>
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFit"
+                Source="ic_show_chart.png"
+                HeightRequest="100"
+                HorizontalOptions="EndAndExpand"
+                Margin="0,0,10,10"
+                VerticalOptions="EndAndExpand"
+                WidthRequest="100"/>
+        </AbsoluteLayout>
+
+        <!-- Background 3 -->
+        <AbsoluteLayout
+            BackgroundColor="{StaticResource Dark   }"
+            TranslationY="-14">
+            <border:SfBorder
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="{StaticResource Purple}"
+                BorderWidth="0"
+                CornerRadius="0,0,0,75"
+                HeightRequest="150">
+                <StackLayout
+                    Margin="40,20"
+                    Padding="0,0,40,0"
+                    VerticalOptions="CenterAndExpand">
+                    <!-- Hour -->
+                    <Label
+                        FontSize="13"
+                        Text="TUESDAY 5:30 PM"
+                        TextColor="White"/>
+
+                    <!-- Description -->
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="Practice French, English and Chinese"
+                        TextColor="White"/>
+
+                    <!-- People -->
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <border:SfBorder
+                            BorderColor="White"
+                            CornerRadius="13"
+                            HeightRequest="26"
+                            WidthRequest="26">
+                            <Image
+                                Aspect="Fill"
+                                Source="foto_3.jpg"/>
+                        </border:SfBorder>
+                        <Label
+                            FontAttributes="Italic"
+                            Text="Join Marie, John and 10 others"
+                            TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+            </border:SfBorder>
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFit"
+                Source="ic_language.png"
+                HeightRequest="100"
+                HorizontalOptions="EndAndExpand"
+                Margin="0,0,10,10"
+                VerticalOptions="EndAndExpand"
+                WidthRequest="100"/>
+        </AbsoluteLayout>
+
+        <!-- Background 4 -->
+        <AbsoluteLayout
+            BackgroundColor="White"
+            TranslationY="-21">
+            <border:SfBorder
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="{StaticResource Dark}"
+                BorderWidth="0"
+                CornerRadius="0,0,0,75"
+                HeightRequest="150">
+                <StackLayout
+                    Margin="40,20"
+                    Padding="0,0,40,0"
+                    VerticalOptions="CenterAndExpand">
+                    <!-- Hour -->
+                    <Label
+                        FontSize="13"
+                        Text="FRIDAY 6:00 PM"
+                        TextColor="White"/>
+
+                    <!-- Description -->
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="Adobe XD Live Event in Europe"
+                        TextColor="White"/>
+
+                    <!-- People -->
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <border:SfBorder
+                            BorderColor="White"
+                            CornerRadius="13"
+                            HeightRequest="26"
+                            WidthRequest="26">
+                            <Image
+                                Aspect="Fill"
+                                Source="foto_3.jpg"/>
+                        </border:SfBorder>
+                        <Label
+                            FontAttributes="Italic"
+                            Text="Paul, Carl and 10 others"
+                            TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+            </border:SfBorder>
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFit"
+                Source="ic_xd.png"
+                HeightRequest="120"
+                HorizontalOptions="EndAndExpand"
+                Margin="0,0,10,10"
+                VerticalOptions="EndAndExpand"
+                WidthRequest="120"/>
+        </AbsoluteLayout>
+
+    </StackLayout>
+    
+</ContentPage>
